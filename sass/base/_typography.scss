@@ -1,0 +1,49 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.weightDefault {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.top-txt {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.special-offer {
+
+    &__txt {
+        text-align: center;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.205em;
+    }
+
+    &__close {
+        font-size: 30px;
+    }
+}
+
+.myNavLink {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    color: $white !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+}
