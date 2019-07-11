@@ -78,11 +78,42 @@ a:hover {
 .pay-txt:not(:last-child) {
   margin-bottom: 14px !important; }
 
+.special-txt {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic; }
+
+.big-txt {
+  font-size: 30px; }
+
+.flowers-txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #343434; }
+
+.flowers-price {
+  font-size: 24px;
+  line-height: 33px; }
+
+.myBtn {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.27em;
+  text-transform: uppercase; }
+
+.title-default {
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+  color: #B10802; }
+
 .footer-container {
   background-color: #333; }
 
 .footer-navbar {
-  max-width: 1200px !important;
+  max-width: 990px !important;
   margin: 0 auto; }
 
 .bottom-box__pin {
@@ -130,14 +161,163 @@ a:hover {
 .myNavBar {
   background-color: #B10802; }
 
+.navbar {
+  padding: 10px !important; }
+
 .nav-link:hover {
-  background-color: salmon !important; }
+  background-color: #8b0000 !important; }
 
 .dropdown-menu {
-  background-color: salmon !important;
+  background-color: #B10802 !important;
   border: none !important;
   border-radius: 0 !important; }
 
 .navbar-toggler {
   color: #fff !important;
   border-color: #fff !important; }
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #8b0000; }
+
+.navbar-nav .nav-link {
+  padding-left: 10px !important; }
+
+.first-sl {
+  background: url(../img/image.png) no-repeat center;
+  background-size: cover; }
+
+.second-sl {
+  background: url(../img/image.png) no-repeat center;
+  background-size: cover; }
+
+.third-sl {
+  background: url(../img/image.png) no-repeat center;
+  background-size: cover; }
+
+.myCards {
+  position: relative;
+  background: #fff;
+  height: 350px; }
+
+.myContainer {
+  position: absolute;
+  width: 92%;
+  height: inherit;
+  transition: all 0.3s linear; }
+
+.myCards:hover .myContainer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  background-color: #fff;
+  height: auto; }
+
+.myCards__btn {
+  display: none !important; }
+
+.cardContainer {
+  margin: 0 auto; }
+
+.myCards:hover .myCards__btn {
+  display: flex !important; }
+
+.myBtn {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 2px solid #B10802;
+  transition: all 0.5s linear; }
+
+.myBtn:hover {
+  color: #fff;
+  background-color: #B10802; }
+
+.feature {
+  position: absolute;
+  top: 60%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 33px;
+  width: 250px;
+  text-transform: uppercase;
+  z-index: 100000;
+  margin-left: -1px; }
+
+.feature__txt {
+  margin: 0;
+  text-align: center; }
+
+.slider__item {
+  height: 30vw !important;
+  min-height: 250px !important; }
+
+.size {
+  position: absolute;
+  top: 27px;
+  color: grey;
+  right: 59px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 16px; }
+
+.size__left {
+  background: url(../img/w.png) no-repeat;
+  background-position: 0px 20px; }
+
+.size__left--txt {
+  width: 30px;
+  height: 30px;
+  text-align: center !important; }
+
+.size__right {
+  background: url(../img/h.png) no-repeat; }
+
+.size__right--txt {
+  padding-left: 6px; }
+
+img.imgW {
+  width: 250px !important; }
+
+.myLink {
+  color: #B10802 !important; }
+
+.main-slider-container {
+  position: relative; }
+
+.next {
+  position: absolute;
+  top: 45%;
+  right: 20px; }
+
+.prev {
+  position: absolute;
+  top: 45%;
+  left: 20px; }
+
+.padNone {
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+  list-style-type: none; }
+  .slick-dots li {
+    margin: 0; }
+  .slick-dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: rgba(177, 8, 2, 0.5) !important;
+    text-indent: -9999px; }
+  .slick-dots li.slick-active button {
+    background-color: #B10802 !important; }

@@ -72,16 +72,53 @@ a:hover {
     color: $white !important;
 }
 
-.footer-title{
+.footer-title {
     text-align: center !important;
     text-transform: uppercase !important;
     margin-bottom: 10px !important;
 }
 
-.delivery-txt:not(:last-child){
+.delivery-txt:not(:last-child) {
     margin-bottom: 14px !important;
 }
 
-.pay-txt:not(:last-child){
+.pay-txt:not(:last-child) {
     margin-bottom: 14px !important;
+}
+
+.special-txt {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.big-txt {
+    font-size: 30px;
+}
+
+.flowers-txt {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #343434;
+}
+
+.flowers-price {
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.myBtn {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+}
+
+.title-default {
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 0.1em;
+    color: $red;
 }
