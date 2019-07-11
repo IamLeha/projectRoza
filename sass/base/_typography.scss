@@ -7,6 +7,16 @@ p {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $white;
+}
+
 .weightDefault {
     font-style: normal;
     font-weight: bold;
@@ -46,4 +56,32 @@ p {
     color: $white !important;
     letter-spacing: 0.06em !important;
     text-transform: uppercase !important;
+}
+
+.myLinkAbout {
+    font-style: normal !important;
+    font-weight: 100 !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    color: $white !important;
+}
+
+.footerTxt {
+    font-size: 14px !important;
+    line-height: 19px !important;
+    color: $white !important;
+}
+
+.footer-title{
+    text-align: center !important;
+    text-transform: uppercase !important;
+    margin-bottom: 10px !important;
+}
+
+.delivery-txt:not(:last-child){
+    margin-bottom: 14px !important;
+}
+
+.pay-txt:not(:last-child){
+    margin-bottom: 14px !important;
 }
