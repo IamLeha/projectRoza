@@ -18,5 +18,10 @@
   "homepage": "https://github.com/IamLeha/projectRoza#readme",
   "dependencies": {
     "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "jquery": "^3.4.1",
+    "slick-carousel": "^1.8.1"
   }
 }

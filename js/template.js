@@ -1,3 +1,4 @@
+/*Скрипт для подключения компонентов*/
 jQuery.ajax({
     url: "layout/headerTop.html",
     dataType: "html",

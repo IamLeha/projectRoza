@@ -8,3 +8,13 @@ body {
     height: 100%;
     min-height: 100vh;
 }
+
+/*Полоса прокрутки*/
+body::-webkit-scrollbar { 
+    width: .8rem; 
+    } 
+    
+    body::-webkit-scrollbar-thumb { 
+    background-color: $red; 
+    outline: 1px solid $red; 
+    }

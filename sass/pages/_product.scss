@@ -1,0 +1,168 @@
+.slider-for__itemN {
+    height: 570px !important;
+}
+
+.slider-nav__itemN {
+    width: 170px !important;
+    height: 170px !important;
+}
+
+.slider-nav__itemN:focus {
+    border: 2px solid $red !important;
+}
+.slider-nav__itemN:active {
+    border: 2px solid $red !important;
+}
+
+.slider-nav__itemN:active {
+    border: 2px solid $red !important;
+}
+
+.slider-nav__itemN:focus {
+    border: 2px solid $red !important;
+}
+
+.slider-nav__itemN:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.slider-navN .slick-list {
+    height: auto !important;
+    padding: 0 !important;
+}
+
+.mc {
+    margin: 0 auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.quantity {
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+    cursor: pointer;
+}
+
+.quantity-num {
+    outline: none;
+    width: 50px !important;
+    text-align: center;
+}
+
+
+.big-first {
+    background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.big-second {
+    background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.big-third {
+    background: url(https://img3.goodfon.ru/original/800x480/a/6a/koshka-zabor-fon-3676.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.littel-first {
+    background: url(https://i.ytimg.com/vi/sMrQVcZVybg/hqdefault.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.littel-second {
+    background: url(https://i.ytimg.com/vi/sMrQVcZVybg/hqdefault.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.littel-third {
+    background: url(https://img3.goodfon.ru/original/800x480/a/6a/koshka-zabor-fon-3676.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.product-description {
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        background-color: $lightGreen;
+        font-size: 20px;
+        letter-spacing: 0.27em;
+        color: $white;
+        text-transform: uppercase;
+        padding: 6px 0 6px 0;
+    }
+
+    &__name {
+        font-size: 30px;
+        line-height: 49px;
+        letter-spacing: 0.075em;
+        color: $grey;
+    }
+
+    &__box {
+        display: flex;
+
+        &--price {
+            font-size: 30px;
+            line-height: 49px;
+            letter-spacing: 0.075em;
+            color: $red;
+        }
+    }
+}
+
+.composition-title {
+    color: $red;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.reviews__item{
+    padding: 25px 28px 25px 28px;
+    width: 30%;
+}
+
+
+.reviews-title {
+    color: $grey !important;
+}
+
+.reviews__item--name {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.075em;
+    color: $black;
+}
+
+.reviews__item--date {
+    font-size: 10px;
+    line-height: 16px;
+    color: $grey;
+}
+
+.reviews__item--txt {
+    font-size: 18px;
+    line-height: 25px;
+    color: $grey
+}

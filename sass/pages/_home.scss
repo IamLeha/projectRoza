@@ -24,11 +24,20 @@
 
 .cardContainer {
     margin: 0 auto;
+    margin-bottom: 100px !important;
 }
 
 .myCards:hover .myCards__btn {
     display: flex !important;
 }
+
+.myCards:hover .myContainer {
+    margin-top: 40px;
+}
+.myCards:hover .size {
+    display: none;
+}
+
 
 .myBtn {
     width: 250px;
@@ -55,7 +64,7 @@
     width: 250px;
     text-transform: uppercase;
     z-index: 100000;
-    margin-left: -1px;
+    //margin-left: -1px;
 }
 
 .feature__txt {
@@ -157,4 +166,19 @@ img.imgW {
 		li.slick-active button {
 			background-color: $red !important;
 		}
+}
+
+.first-sl {
+    background: url(../img/image.png)no-repeat center;
+    background-size: cover;
+}
+
+.second-sl {
+    background: url(../img/image.png)no-repeat center;
+    background-size: cover;
+}
+
+.third-sl {
+    background: url(../img/image.png)no-repeat center;
+    background-size: cover;
 }
