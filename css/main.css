@@ -266,21 +266,17 @@ a:hover {
   text-transform: uppercase;
   display: flex;
   font-size: 16px; }
-
-.size__left {
-  background: url(../img/w.png) no-repeat;
-  background-position: 0px 20px; }
-
-.size__left--txt {
-  width: 30px;
-  height: 30px;
-  text-align: center !important; }
-
-.size__right {
-  background: url(../img/h.png) no-repeat; }
-
-.size__right--txt {
-  padding-left: 6px; }
+  .size__left {
+    background: url(../img/w.png) no-repeat;
+    background-position: 0px 20px; }
+    .size__left--txt {
+      width: 30px;
+      height: 30px;
+      text-align: center !important; }
+  .size__right {
+    background: url(../img/h.png) no-repeat; }
+    .size__right--txt {
+      padding-left: 6px; }
 
 img.imgW {
   width: 250px !important; }
@@ -448,25 +444,40 @@ input[type="number"] {
 
 .reviews__item {
   padding: 25px 28px 25px 28px;
-  width: 30%; }
+  width: 30%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); }
+  .reviews__item--name {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.075em;
+    color: #000; }
+  .reviews__item--date {
+    font-size: 10px;
+    line-height: 16px;
+    color: #333; }
+  .reviews__item--txt {
+    font-size: 18px;
+    line-height: 25px;
+    color: #333; }
 
 .reviews-title {
   color: #333 !important; }
 
-.reviews__item--name {
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 600;
-  line-height: 25px;
-  letter-spacing: 0.075em;
-  color: #000; }
+/*Медиа*/
+@media screen and (max-width: 769px) {
+  .reviews__item {
+    width: 45%; }
+  .reviews__item:not(:last-child) {
+    margin-bottom: 20px; }
+  .slider-navN {
+    display: none !important; } }
 
-.reviews__item--date {
-  font-size: 10px;
-  line-height: 16px;
-  color: #333; }
-
-.reviews__item--txt {
-  font-size: 18px;
-  line-height: 25px;
-  color: #333; }
+@media screen and (max-width: 450px) {
+  .reviews__item {
+    width: 100%; }
+  .reviews__item:not(:last-child) {
+    margin-bottom: 20px; }
+  .slider-navN {
+    display: none !important; } }

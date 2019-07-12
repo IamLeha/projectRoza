@@ -86,25 +86,25 @@
     text-transform: uppercase;
     display: flex;
     font-size: 16px;
-}
 
-.size__left {
-    background: url(../img/w.png) no-repeat;
-    background-position: 0px 20px;
-}
+    &__left {
+        background: url(../img/w.png) no-repeat;
+        background-position: 0px 20px;
 
-.size__left--txt {
-    width: 30px;
-    height: 30px;
-    text-align: center !important;
-}
+        &--txt {
+            width: 30px;
+            height: 30px;
+            text-align: center !important;
+        }
+    }
 
-.size__right {
-    background: url(../img/h.png) no-repeat;
-}
+    &__right {
+        background: url(../img/h.png) no-repeat;
 
-.size__right--txt {
-    padding-left: 6px;
+        &--txt {
+            padding-left: 6px;
+        }
+    }
 }
 
 img.imgW {
