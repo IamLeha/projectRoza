@@ -56,3 +56,12 @@ $(function() {
   })();
 });
 /*---------------------------------------------------------------------------*/
+
+/*ZOOM*/
+$(document).ready(function () {
+  $('.light-zoom').lightzoom({
+      zoomPower   : 2,    //Default
+      glassSize   : 200,  //Default
+  });
+});
+/*---*/

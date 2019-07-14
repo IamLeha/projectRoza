@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  border: 0;
   min-height: 100vh; }
 
 /*Полоса прокрутки*/
@@ -207,6 +208,11 @@ a:hover {
 
 .myCards:hover .size {
   display: none; }
+
+/*.myCards:hover .feature {
+    margin-top: 40px;
+    transition: all 0.3s linear;
+}*
 
 /*---------------*/
 /*Кнопка заказать*/
@@ -497,6 +503,24 @@ input[type="number"] {
 .slick-track .slick-track {
   display: none; }
 
+/*ZOOM*/
+.zoom {
+  display: inline-block;
+  position: relative; }
+
+.zoom img {
+  display: block; }
+
+.zoom img::selection {
+  background-color: transparent; }
+
+img:hover {
+  cursor: url(../img/grab.cur), default; }
+
+img:active {
+  cursor: url(../img/grabbed.cur), default; }
+
+/*----*/
 /*Медиа*/
 @media screen and (max-width: 769px) {
   .reviews__item {
@@ -512,4 +536,6 @@ input[type="number"] {
   .reviews__item:not(:last-child) {
     margin-bottom: 20px; }
   .slider-navN {
-    display: none !important; } }
+    display: none !important; }
+  .slider-for__itemN {
+    height: 250px !important; } }
