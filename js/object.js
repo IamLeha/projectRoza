@@ -1,6 +1,6 @@
 /*Обьекты для заполнения плитки товаров*/
 let flowers = [{
-    img: "../img/flower.png",
+    img: "img/flower.png",
     name: 'Букет кружевные сны',
     price: 150000,
     feature: "новинка",
@@ -8,19 +8,19 @@ let flowers = [{
     sizeW: 45,
     sizeH: 40
 }, {
-    img: "../img/flower.png",
+    img: "img/flower.png",
     name: 'Букет кружевные сны',
     price: 150000,
     sizeW: 45,
     sizeH: 40
 }, {
-    img: "../img/flower.png",
+    img: "img/flower.png",
     name: 'Букет кружевные сны',
     price: 150000,
     sizeW: 45,
     sizeH: 40
 }, {
-    img: "../img/flower.png",
+    img: "img/flower.png",
     name: 'Букет кружевные сны',
     price: 150000,
     feature: "лучшая цена",
@@ -28,13 +28,13 @@ let flowers = [{
     sizeW: 45,
     sizeH: 40
 }, {
-    img: "../img/flower.png",
+    img: "img/flower.png",
     name: 'Букет кружевные сны',
     price: 150000,
     sizeW: 45,
     sizeH: 40
 }, {
-    img: "../img/flower.png",
+    img: "img/flower.png",
     name: 'Букет кружевные сны',
     price: 150000,
     sizeW: 45,
