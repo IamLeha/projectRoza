@@ -11,13 +11,6 @@
     transition: all 0.3s linear;
 }
 
-.myCards:hover .myContainer {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    background-color: #fff;
-    height: auto;
-}
-
 .myCards__btn {
     display: none !important;
 }
@@ -25,6 +18,14 @@
 .cardContainer {
     margin: 0 auto;
     margin-bottom: 100px !important;
+}
+
+/* При наведении*/
+.myCards:hover .myContainer {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    background-color: #fff;
+    height: auto;
 }
 
 .myCards:hover .myCards__btn {
@@ -37,8 +38,9 @@
 .myCards:hover .size {
     display: none;
 }
+/*---------------*/
 
-
+/*Кнопка заказать*/
 .myBtn {
     width: 250px;
     margin: 0 auto;
@@ -48,12 +50,17 @@
     background-color: #fff;
     border: 2px solid $red;
     transition: all 0.5s linear;
+    font-size: 1.125rem;
+    line-height: 30px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
 }
 
 .myBtn:hover {
     color: #fff;
     background-color: $red;
 }
+/*----------------*/
 
 .feature {
     position: absolute;
@@ -84,7 +91,7 @@
     right: 59px;
     font-size: 12px;
     text-transform: uppercase;
-    display: flex;
+    @include dflex(unset, unset);
     font-size: 16px;
 
     &__left {
@@ -138,8 +145,7 @@ img.imgW {
 }
 
 .slick-dots {
-	display: flex;
-	justify-content: center;
+	@include dflex(center, unset);
 	
 	margin: 0;
 	padding: 10px 0;
@@ -168,6 +174,7 @@ img.imgW {
 		}
 }
 
+/*Картинки для  главного слайдера*/
 .first-sl {
     background: url(../img/image.png)no-repeat center;
     background-size: cover;

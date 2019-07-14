@@ -1,5 +1,7 @@
+
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 p {
@@ -20,14 +22,14 @@ a:hover {
 .weightDefault {
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 25px;
 }
 
 .top-txt {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 19px;
 }
 
@@ -35,89 +37,18 @@ a:hover {
     text-transform: uppercase;
 }
 
-.special-offer {
-
-    &__txt {
-        text-align: center;
-        font-size: 24px;
-        line-height: 33px;
-        letter-spacing: 0.205em;
-    }
-
-    &__close {
-        font-size: 30px;
-    }
-}
-
-.myNavLink {
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    line-height: 25px !important;
-    color: $white !important;
-    letter-spacing: 0.06em !important;
-    text-transform: uppercase !important;
-}
-
-.myLinkAbout {
-    font-style: normal !important;
-    font-weight: 100 !important;
-    font-size: 18px !important;
-    line-height: 25px !important;
-    color: $white !important;
-}
-
-.footerTxt {
-    font-size: 14px !important;
-    line-height: 19px !important;
-    color: $white !important;
-}
-
-.footer-title {
-    text-align: center !important;
-    text-transform: uppercase !important;
-    margin-bottom: 10px !important;
-}
-
-.delivery-txt:not(:last-child) {
-    margin-bottom: 14px !important;
-}
-
-.pay-txt:not(:last-child) {
-    margin-bottom: 14px !important;
-}
-
 .special-txt {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
     font-style: italic;
 }
 
 .big-txt {
-    font-size: 30px;
-}
-
-.flowers-txt {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #343434;
-}
-
-.flowers-price {
-    font-size: 24px;
-    line-height: 33px;
-}
-
-.myBtn {
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0.27em;
-    text-transform: uppercase;
+    font-size: 1.875rem;
 }
 
 .title-default {
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 49px;
     letter-spacing: 0.1em;
     color: $red;

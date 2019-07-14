@@ -18,7 +18,8 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid #B10802; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
 
 p {
   margin: 0;
@@ -35,30 +36,41 @@ a:hover {
 .weightDefault {
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 25px; }
 
 .top-txt {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 19px; }
 
 .upper {
   text-transform: uppercase; }
 
-.special-offer__txt {
-  text-align: center;
-  font-size: 24px;
-  line-height: 33px;
-  letter-spacing: 0.205em; }
+.special-txt {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: italic; }
 
-.special-offer__close {
-  font-size: 30px; }
+.big-txt {
+  font-size: 1.875rem; }
+
+.title-default {
+  font-size: 2.25rem;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+  color: #B10802; }
+
+.footer-container {
+  background-color: #333; }
+
+.footer-navbar {
+  max-width: 990px !important; }
 
 .myNavLink {
   font-weight: 400 !important;
-  font-size: 18px !important;
+  font-size: 1.125rem !important;
   line-height: 25px !important;
   color: #fff !important;
   letter-spacing: 0.06em !important;
@@ -67,12 +79,12 @@ a:hover {
 .myLinkAbout {
   font-style: normal !important;
   font-weight: 100 !important;
-  font-size: 18px !important;
+  font-size: 1.125rem !important;
   line-height: 25px !important;
   color: #fff !important; }
 
 .footerTxt {
-  font-size: 14px !important;
+  font-size: 0.875rem !important;
   line-height: 19px !important;
   color: #fff !important; }
 
@@ -86,44 +98,6 @@ a:hover {
 
 .pay-txt:not(:last-child) {
   margin-bottom: 14px !important; }
-
-.special-txt {
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic; }
-
-.big-txt {
-  font-size: 30px; }
-
-.flowers-txt {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #343434; }
-
-.flowers-price {
-  font-size: 24px;
-  line-height: 33px; }
-
-.myBtn {
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0.27em;
-  text-transform: uppercase; }
-
-.title-default {
-  font-size: 36px;
-  line-height: 49px;
-  letter-spacing: 0.1em;
-  color: #B10802; }
-
-.footer-container {
-  background-color: #333; }
-
-.footer-navbar {
-  max-width: 990px !important;
-  margin: 0 auto; }
 
 .bottom-box__pin {
   width: 12px;
@@ -156,9 +130,14 @@ a:hover {
     position: absolute;
     right: 14px;
     top: 4px;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 1.875rem; }
   .special-offer__txt {
-    width: 100%; }
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 33px;
+    letter-spacing: 0.205em; }
 
 .dropdown-toggle::after {
   display: none; }
@@ -192,6 +171,9 @@ a:hover {
 .navbar-nav .nav-link {
   padding-left: 10px !important; }
 
+.navbar-toggler {
+  margin-bottom: 10px !important; }
+
 .myCards {
   position: relative;
   background: #fff;
@@ -203,18 +185,19 @@ a:hover {
   height: inherit;
   transition: all 0.3s linear; }
 
-.myCards:hover .myContainer {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-  background-color: #fff;
-  height: auto; }
-
 .myCards__btn {
   display: none !important; }
 
 .cardContainer {
   margin: 0 auto;
   margin-bottom: 100px !important; }
+
+/* При наведении*/
+.myCards:hover .myContainer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  background-color: #fff;
+  height: auto; }
 
 .myCards:hover .myCards__btn {
   display: flex !important; }
@@ -225,6 +208,8 @@ a:hover {
 .myCards:hover .size {
   display: none; }
 
+/*---------------*/
+/*Кнопка заказать*/
 .myBtn {
   width: 250px;
   margin: 0 auto;
@@ -233,12 +218,17 @@ a:hover {
   margin-top: 10px;
   background-color: #fff;
   border: 2px solid #B10802;
-  transition: all 0.5s linear; }
+  transition: all 0.5s linear;
+  font-size: 1.125rem;
+  line-height: 30px;
+  letter-spacing: 0.27em;
+  text-transform: uppercase; }
 
 .myBtn:hover {
   color: #fff;
   background-color: #B10802; }
 
+/*----------------*/
 .feature {
   position: absolute;
   top: 60%;
@@ -264,7 +254,15 @@ a:hover {
   right: 59px;
   font-size: 12px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
   font-size: 16px; }
   .size__left {
     background: url(../img/w.png) no-repeat;
@@ -302,8 +300,15 @@ img.imgW {
   padding-left: 0px !important; }
 
 .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
   margin: 0;
   padding: 10px 0;
   list-style-type: none; }
@@ -321,6 +326,7 @@ img.imgW {
   .slick-dots li.slick-active button {
     background-color: #B10802 !important; }
 
+/*Картинки для  главного слайдера*/
 .first-sl {
   background: url(../img/image.png) no-repeat center;
   background-size: cover; }
@@ -340,6 +346,7 @@ img.imgW {
   width: 170px !important;
   height: 170px !important; }
 
+/* Красная обводка */
 .slider-nav__itemN:focus {
   border: 2px solid #B10802 !important; }
 
@@ -352,40 +359,9 @@ img.imgW {
 .slider-nav__itemN:focus {
   border: 2px solid #B10802 !important; }
 
+/*--------------------*/
 .slider-nav__itemN:not(:last-child) {
   margin-bottom: 30px; }
-
-.slider-navN .slick-list {
-  height: auto !important;
-  padding: 0 !important; }
-
-.mc {
-  margin: 0 auto; }
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0; }
-
-input[type="number"] {
-  -moz-appearance: textfield; }
-
-.quantity {
-  margin: auto;
-  font-size: 20px;
-  display: flex;
-  align-items: center; }
-
-.quantity-arrow-minus,
-.quantity-arrow-plus {
-  cursor: pointer; }
-
-.quantity-num {
-  outline: none;
-  width: 50px !important;
-  text-align: center; }
 
 .big-first {
   background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
@@ -411,6 +387,51 @@ input[type="number"] {
   background: url(https://img3.goodfon.ru/original/800x480/a/6a/koshka-zabor-fon-3676.jpg) no-repeat 100%;
   background-size: cover; }
 
+.flowers-txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #343434; }
+
+.flowers-price {
+  font-size: 1.5rem;
+  line-height: 33px; }
+
+/* Кол-во товара */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
+.quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+  font-size: 20px;
+  align-items: center; }
+
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+  cursor: pointer; }
+
+.quantity-num {
+  outline: none;
+  width: 70px !important;
+  text-align: center; }
+
+/*-----------------------*/
 .product-description__title {
   width: 100%;
   text-align: center;
@@ -428,7 +449,15 @@ input[type="number"] {
   color: #333; }
 
 .product-description__box {
-  display: flex; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset; }
   .product-description__box--price {
     font-size: 30px;
     line-height: 49px;
@@ -464,6 +493,9 @@ input[type="number"] {
 
 .reviews-title {
   color: #333 !important; }
+
+.slick-track .slick-track {
+  display: none; }
 
 /*Медиа*/
 @media screen and (max-width: 769px) {

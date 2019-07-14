@@ -7,10 +7,8 @@
     height: 170px !important;
 }
 
+/* Красная обводка */
 .slider-nav__itemN:focus {
-    border: 2px solid $red !important;
-}
-.slider-nav__itemN:active {
     border: 2px solid $red !important;
 }
 
@@ -18,51 +16,18 @@
     border: 2px solid $red !important;
 }
 
+.slider-nav__itemN:active {
+    border: 2px solid $red !important;
+}
+
 .slider-nav__itemN:focus {
     border: 2px solid $red !important;
 }
+/*--------------------*/
+
 
 .slider-nav__itemN:not(:last-child) {
     margin-bottom: 30px;
-}
-
-.slider-navN .slick-list {
-    height: auto !important;
-    padding: 0 !important;
-}
-
-.mc {
-    margin: 0 auto;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
-}
-
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-.quantity {
-    margin: auto;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.quantity-arrow-minus,
-.quantity-arrow-plus {
-    cursor: pointer;
-}
-
-.quantity-num {
-    outline: none;
-    width: 50px !important;
-    text-align: center;
 }
 
 
@@ -96,6 +61,50 @@ input[type="number"] {
     background-size: cover;
 }
 
+.flowers-txt {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #343434;
+}
+
+.flowers-price {
+    font-size: 1.5rem;
+    line-height: 33px;
+}
+
+/* Кол-во товара */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.quantity {
+    @include dflex(unset, unset);
+    font-size: 20px;
+    align-items: center;
+}
+
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+    cursor: pointer;
+}
+
+.quantity-num {
+    outline: none;
+    width: 70px !important;
+    text-align: center;
+}
+/*-----------------------*/
+
 .product-description {
 
     &__title {
@@ -117,7 +126,7 @@ input[type="number"] {
     }
 
     &__box {
-        display: flex;
+        @include dflex(space-between, unset);
 
         &--price {
             font-size: 30px;
@@ -166,6 +175,10 @@ input[type="number"] {
 
 .reviews-title {
     color: $grey !important;
+}
+
+.slick-track .slick-track {
+    display: none;
 }
 
 

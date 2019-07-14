@@ -1,11 +1,44 @@
-.footer-container{
+.footer-container {
     background-color: $grey;
 }
-.footer-navbar{
+
+.footer-navbar {
     max-width: 990px !important;
-    margin: 0 auto;
 }
 
+.myNavLink {
+    font-weight: 400 !important;
+    font-size: 1.125rem !important;
+    line-height: 25px !important;
+    color: $white !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+}
 
+.myLinkAbout {
+    font-style: normal !important;
+    font-weight: 100 !important;
+    font-size: 1.125rem !important;
+    line-height: 25px !important;
+    color: $white !important;
+}
 
+.footerTxt {
+    font-size: 0.875rem !important;
+    line-height: 19px !important;
+    color: $white !important;
+}
 
+.footer-title {
+    text-align: center !important;
+    text-transform: uppercase !important;
+    margin-bottom: 10px !important;
+}
+
+.delivery-txt:not(:last-child) {
+    margin-bottom: 14px !important;
+}
+
+.pay-txt:not(:last-child) {
+    margin-bottom: 14px !important;
+}

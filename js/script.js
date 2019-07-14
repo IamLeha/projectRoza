@@ -24,15 +24,15 @@ $('.slider-forN').slick({
   fade: true,
 });
 $('.slider-navN').slick({
-  slidesToShow: 1000,
+  slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.slider-forN',
-  centerMode: true,
   focusOnSelect: true,
   vertical: true,
   arrows:true
 });
 /*------------------------*/
+
 
 /*Кнопки для прибавления и удаления количества в инпуте в карточке товара*/
 $(function() {

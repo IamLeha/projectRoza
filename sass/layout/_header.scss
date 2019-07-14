@@ -43,10 +43,15 @@
         right: 14px;
         top: 4px;
         cursor: pointer;
+        font-size: 1.875rem;
     }
 
     &__txt {
         width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 33px;
+        letter-spacing: 0.205em;
     }
 }
 
@@ -89,4 +94,8 @@
 
 .navbar-nav .nav-link {
     padding-left: 10px !important;
+}
+
+.navbar-toggler{
+    margin-bottom: 10px !important; 
 }
