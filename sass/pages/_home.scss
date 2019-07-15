@@ -2,6 +2,10 @@
     position: relative;
     background: #fff;
     height: 350px;
+
+    &__btn {
+        display: none !important;
+    }
 }
 
 .myContainer {
@@ -11,9 +15,6 @@
     transition: all 0.3s linear;
 }
 
-.myCards__btn {
-    display: none !important;
-}
 
 .cardContainer {
     margin: 0 auto;
@@ -39,10 +40,10 @@
     display: none;
 }
 
-/*.myCards:hover .feature {
+.myCards:hover .feature {
     margin-top: 40px;
     transition: all 0.3s linear;
-}*
+}
 
 /*---------------*/
 
@@ -60,12 +61,14 @@
     line-height: 30px;
     letter-spacing: 0.27em;
     text-transform: uppercase;
+
+    &:hover {
+        color: #fff;
+        background-color: $red;
+    }
 }
 
-.myBtn:hover {
-    color: #fff;
-    background-color: $red;
-}
+
 /*----------------*/
 
 .feature {
@@ -78,11 +81,12 @@
     text-transform: uppercase;
     z-index: 100000;
     //margin-left: -1px;
-}
+    transition: all 0.3s linear;
 
-.feature__txt {
-    margin: 0;
-    text-align: center;
+    &__txt {
+        margin: 0;
+        text-align: center;
+    }
 }
 
 .slider__item{

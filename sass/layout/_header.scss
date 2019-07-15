@@ -16,6 +16,10 @@
 
     &__number {
         color: $red;
+
+        &:hover {
+            color: $red;
+        }
     }
 }
 
@@ -59,7 +63,7 @@
     display: none;
 }
 
-.dropdown:hover .dropdown-menu {
+.myDropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
 }
@@ -96,6 +100,34 @@
     padding-left: 10px !important;
 }
 
-.navbar-toggler{
-    margin-bottom: 10px !important; 
+.navbar-toggler {
+    margin-bottom: 10px !important;
 }
+
+.myDropdown__btn {
+    background-color: $white;
+    border: none;
+}
+
+.select {
+    position: relative;
+
+    &:after {
+        display: none !important;
+    }
+}
+
+.select select {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    padding: 0px 10px 0px 10px;
+}
+
+

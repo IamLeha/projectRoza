@@ -100,6 +100,10 @@ a:hover {
 .pay-txt:not(:last-child) {
   margin-bottom: 14px !important; }
 
+@media screen and (max-width: 769px) {
+  .footer-navbar {
+    display: none !important; } }
+
 .bottom-box__pin {
   width: 12px;
   height: 16px; }
@@ -113,6 +117,8 @@ a:hover {
 
 .bottom-box__number {
   color: #B10802; }
+  .bottom-box__number:hover {
+    color: #B10802; }
 
 .basket__img {
   position: relative; }
@@ -143,7 +149,7 @@ a:hover {
 .dropdown-toggle::after {
   display: none; }
 
-.dropdown:hover .dropdown-menu {
+.myDropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0; }
 
@@ -175,19 +181,39 @@ a:hover {
 .navbar-toggler {
   margin-bottom: 10px !important; }
 
+.myDropdown__btn {
+  background-color: #fff;
+  border: none; }
+
+.select {
+  position: relative; }
+  .select:after {
+    display: none !important; }
+
+.select select {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  padding: 0px 10px 0px 10px; }
+
 .myCards {
   position: relative;
   background: #fff;
   height: 350px; }
+  .myCards__btn {
+    display: none !important; }
 
 .myContainer {
   position: absolute;
   width: 92%;
   height: inherit;
   transition: all 0.3s linear; }
-
-.myCards__btn {
-  display: none !important; }
 
 .cardContainer {
   margin: 0 auto;
@@ -209,10 +235,9 @@ a:hover {
 .myCards:hover .size {
   display: none; }
 
-/*.myCards:hover .feature {
-    margin-top: 40px;
-    transition: all 0.3s linear;
-}*
+.myCards:hover .feature {
+  margin-top: 40px;
+  transition: all 0.3s linear; }
 
 /*---------------*/
 /*Кнопка заказать*/
@@ -229,10 +254,9 @@ a:hover {
   line-height: 30px;
   letter-spacing: 0.27em;
   text-transform: uppercase; }
-
-.myBtn:hover {
-  color: #fff;
-  background-color: #B10802; }
+  .myBtn:hover {
+    color: #fff;
+    background-color: #B10802; }
 
 /*----------------*/
 .feature {
@@ -243,11 +267,11 @@ a:hover {
   line-height: 33px;
   width: 250px;
   text-transform: uppercase;
-  z-index: 100000; }
-
-.feature__txt {
-  margin: 0;
-  text-align: center; }
+  z-index: 100000;
+  transition: all 0.3s linear; }
+  .feature__txt {
+    margin: 0;
+    text-align: center; }
 
 .slider__item {
   height: 30vw !important;
@@ -352,6 +376,9 @@ img.imgW {
   width: 170px !important;
   height: 170px !important; }
 
+.slider-nav__itemN:not(:last-child) {
+  margin-bottom: 30px; }
+
 /* Красная обводка */
 .slider-nav__itemN:focus {
   border: 2px solid #B10802 !important; }
@@ -366,21 +393,21 @@ img.imgW {
   border: 2px solid #B10802 !important; }
 
 /*--------------------*/
-.slider-nav__itemN:not(:last-child) {
-  margin-bottom: 30px; }
-
-.big-first {
-  background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
-  background-size: cover; }
+/*.big-first {
+    background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
+    background-size: cover;
+}
 
 .big-second {
-  background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
-  background-size: cover; }
+    background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
+    background-size: cover;
+}
 
 .big-third {
-  background: url(https://img3.goodfon.ru/original/800x480/a/6a/koshka-zabor-fon-3676.jpg) no-repeat 100%;
-  background-size: cover; }
-
+    background: url(https://img3.goodfon.ru/original/800x480/a/6a/koshka-zabor-fon-3676.jpg) no-repeat 100%;
+    background-size: cover;
+}
+*/
 .littel-first {
   background: url(https://i.ytimg.com/vi/sMrQVcZVybg/hqdefault.jpg) no-repeat 100%;
   background-size: cover; }
@@ -503,24 +530,6 @@ input[type="number"] {
 .slick-track .slick-track {
   display: none; }
 
-/*ZOOM*/
-.zoom {
-  display: inline-block;
-  position: relative; }
-
-.zoom img {
-  display: block; }
-
-.zoom img::selection {
-  background-color: transparent; }
-
-img:hover {
-  cursor: url(../img/grab.cur), default; }
-
-img:active {
-  cursor: url(../img/grabbed.cur), default; }
-
-/*----*/
 /*Медиа*/
 @media screen and (max-width: 769px) {
   .reviews__item {

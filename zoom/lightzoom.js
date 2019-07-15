@@ -7,7 +7,7 @@
 $.fn.lightzoom = function(options) {
 
     var settings = $.extend({
-        zoomPower   : 3,
+        zoomPower   : 4,
         glassSize   : 175,
     }, options);
 

@@ -42,3 +42,11 @@
 .pay-txt:not(:last-child) {
     margin-bottom: 14px !important;
 }
+
+
+@media screen and (max-width: 769px){
+    .footer-navbar{
+        display: none !important;
+    }
+}
+

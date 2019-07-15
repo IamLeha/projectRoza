@@ -7,6 +7,10 @@
     height: 170px !important;
 }
 
+.slider-nav__itemN:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 /* Красная обводка */
 .slider-nav__itemN:focus {
     border: 2px solid $red !important;
@@ -27,12 +31,7 @@
 /*--------------------*/
 
 
-.slider-nav__itemN:not(:last-child) {
-    margin-bottom: 30px;
-}
-
-
-.big-first {
+/*.big-first {
     background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
     background-size: cover;
 }
@@ -46,7 +45,7 @@
     background: url(https://img3.goodfon.ru/original/800x480/a/6a/koshka-zabor-fon-3676.jpg) no-repeat 100%;
     background-size: cover;
 }
-
+*/
 .littel-first {
     background: url(https://i.ytimg.com/vi/sMrQVcZVybg/hqdefault.jpg) no-repeat 100%;
     background-size: cover;
@@ -182,31 +181,6 @@ input[type="number"] {
 .slick-track .slick-track {
     display: none;
 }
-
-/*ZOOM*/
-.zoom {
-    display: inline-block;
-    position: relative;
-}
-
-.zoom img {
-    display: block;
-}
-
-.zoom img::selection {
-    background-color: transparent;
-}
-
-img:hover {
-    cursor: url(../img/grab.cur), default;
-}
-
-img:active {
-    cursor: url(../img/grabbed.cur), default;
-}
-
-/*----*/
-
 
 /*Медиа*/
 @media screen and (max-width: 769px) {
