@@ -48,5 +48,16 @@
     .footer-navbar{
         display: none !important;
     }
+
+    .footer-info{
+
+        &__delivery{
+            margin-top: 20px;
+        }
+
+        &__pay{
+            margin-top: 20px;
+        }
+    }
 }
 

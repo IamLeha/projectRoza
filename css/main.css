@@ -63,6 +63,10 @@ a:hover {
   letter-spacing: 0.1em;
   color: #B10802; }
 
+@media screen and (max-width: 769px) {
+  body {
+    font-size: 12px; } }
+
 .footer-container {
   background-color: #333; }
 
@@ -102,7 +106,11 @@ a:hover {
 
 @media screen and (max-width: 769px) {
   .footer-navbar {
-    display: none !important; } }
+    display: none !important; }
+  .footer-info__delivery {
+    margin-top: 20px; }
+  .footer-info__pay {
+    margin-top: 20px; } }
 
 .bottom-box__pin {
   width: 12px;
@@ -140,7 +148,8 @@ a:hover {
     cursor: pointer;
     font-size: 1.875rem; }
   .special-offer__txt {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     text-align: center;
     font-size: 1.5rem;
     line-height: 33px;
@@ -201,6 +210,55 @@ a:hover {
   appearance: none;
   font-family: inherit;
   padding: 0px 10px 0px 10px; }
+
+.basket-block {
+  display: none !important; }
+
+@media screen and (max-width: 1025px) {
+  .top-header__chooseTown {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important; }
+  .top-header__delivery {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important; }
+  .top-header__number {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important; } }
+
+@media screen and (max-width: 769px) {
+  .logo-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    margin-bottom: 20px; }
+  .basket-block {
+    display: flex !important; }
+  .top-header__basket {
+    display: none !important; }
+  .special-offer__txt {
+    font-size: 1.2rem; }
+  .special-offer__close {
+    top: 3px; } }
+
+@media screen and (max-width: 425px) {
+  .special-offer__txt {
+    font-size: 1rem; }
+  .special-offer__close {
+    top: 20px; } }
+
+@media screen and (max-width: 321px) {
+  .special-offer__txt {
+    font-size: 0.8rem; } }
 
 .myCards {
   position: relative;
@@ -281,7 +339,7 @@ a:hover {
   position: absolute;
   top: 27px;
   color: grey;
-  right: 59px;
+  right: 17%;
   font-size: 12px;
   text-transform: uppercase;
   display: -webkit-box;
@@ -370,6 +428,11 @@ img.imgW {
   background-size: cover; }
 
 .slider-for__itemN {
+  height: 570px !important;
+  width: 570px; }
+
+.slider-for__itemN img {
+  width: 100% !important;
   height: 570px !important; }
 
 .slider-nav__itemN {
@@ -397,23 +460,21 @@ img.imgW {
     background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
     background-size: cover;
 }
-
 .big-second {
     background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
     background-size: cover;
 }
-
 .big-third {
     background: url(https://img3.goodfon.ru/original/800x480/a/6a/koshka-zabor-fon-3676.jpg) no-repeat 100%;
     background-size: cover;
 }
 */
 .littel-first {
-  background: url(https://i.ytimg.com/vi/sMrQVcZVybg/hqdefault.jpg) no-repeat 100%;
+  background: url(https://img-fotki.yandex.ru/get/3913/137106206.55e/0_1259ae_e96adcab_orig.jpg) no-repeat 100%;
   background-size: cover; }
 
 .littel-second {
-  background: url(https://i.ytimg.com/vi/sMrQVcZVybg/hqdefault.jpg) no-repeat 100%;
+  background: url(https://images.wallpaperscraft.com/image/stones_wet_form_shine_53282_1920x1080.jpg) no-repeat 100%;
   background-size: cover; }
 
 .littel-third {
@@ -461,7 +522,8 @@ input[type="number"] {
 
 .quantity-num {
   outline: none;
-  width: 70px !important;
+  width: 71px !important;
+  height: 30px;
   text-align: center; }
 
 /*-----------------------*/
@@ -530,6 +592,18 @@ input[type="number"] {
 .slick-track .slick-track {
   display: none; }
 
+.nextProd {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  display: none; }
+
+.prevProd {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  display: none; }
+
 /*Медиа*/
 @media screen and (max-width: 769px) {
   .reviews__item {
@@ -537,7 +611,17 @@ input[type="number"] {
   .reviews__item:not(:last-child) {
     margin-bottom: 20px; }
   .slider-navN {
-    display: none !important; } }
+    margin-top: 30px; }
+  .slider-forN {
+    order: -1; }
+  .slider-nav__itemN:nth-child(2n) {
+    margin: 0px 22px; }
+  .slider-nav__itemN:not(:last-child) {
+    margin-bottom: 0px; }
+  .product-description {
+    margin-top: 30px; }
+  .slider-navN {
+    height: 170px !important; } }
 
 @media screen and (max-width: 450px) {
   .reviews__item {
@@ -547,4 +631,13 @@ input[type="number"] {
   .slider-navN {
     display: none !important; }
   .slider-for__itemN {
-    height: 250px !important; } }
+    height: auto !important; }
+  .slider-for__itemN img {
+    height: 30vw !important;
+    min-height: 250px !important; }
+  .product-description__buy .myBtn {
+    width: 100% !important; }
+  .nextProd {
+    display: block; }
+  .prevProd {
+    display: block; } }

@@ -53,3 +53,9 @@ a:hover {
     letter-spacing: 0.1em;
     color: $red;
 }
+
+@media screen and (max-width: 769px){
+    body {
+        font-size: 12px;
+    }
+}

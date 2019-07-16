@@ -22,6 +22,16 @@ $('.slider-forN').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+  responsive: [
+    {
+      breakpoint: 425,
+      settings: {
+        arrows: true,
+    prevArrow: $(".prevProd"),
+    nextArrow: $(".nextProd"),
+      }
+    }
+  ]
 });
 $('.slider-navN').slick({
   slidesToShow: 3,
@@ -29,7 +39,16 @@ $('.slider-navN').slick({
   asNavFor: '.slider-forN',
   focusOnSelect: true,
   vertical: true,
-  arrows:true
+  arrows:false,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        vertical:false,
+        centerMode: true,
+        }
+    }
+  ]
 });
 /*------------------------*/
 
@@ -37,9 +56,9 @@ $('.slider-navN').slick({
 /*Кнопки для прибавления и удаления количества в инпуте в карточке товара*/
 $(function() {
   (function quantityProducts() {
-    var $quantityArrowMinus = $(".quantity-arrow-minus");
-    var $quantityArrowPlus = $(".quantity-arrow-plus");
-    var $quantityNum = $(".quantity-num");
+    let $quantityArrowMinus = $(".quantity-arrow-minus");
+    let $quantityArrowPlus = $(".quantity-arrow-plus");
+    let $quantityNum = $(".quantity-num");
  
     $quantityArrowMinus.click(quantityMinus);
     $quantityArrowPlus.click(quantityPlus);
@@ -56,4 +75,3 @@ $(function() {
   })();
 });
 /*---------------------------------------------------------------------------*/
-
