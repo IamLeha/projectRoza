@@ -33,13 +33,12 @@
     <div id="headerBottom"></div>
     <!---->
 
-    <main class="container-fluid padNone">
+    <main>
 
         <div id="grid-holder"></div>
 
         <script type="text/template" id="grid-template">
-            
-            <div class="row container cardContainer mt-5">
+            <div class="row container cardContainer">
                     <% for(var i = 0; i < list.length; i++) { %>
                     <div class="myCards col-xs-12 col-sm-6 col-md-6 col-lg-4 p-1 d-flex flex-column align-items-center mb-4">
                         <div class="myContainer border">
@@ -75,7 +74,7 @@
         
                     </div>
                     <% } %>
-                </a>
+            </div>
       </script>
     </main>
 
@@ -97,4 +96,5 @@
     <script src="js/script.js"></script>
 
 </body>
+
 </html>

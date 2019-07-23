@@ -66,12 +66,18 @@
     background-size: cover;
 }
 
+.myBtn-product{
+    @extend %btn;
+    width: 100%;
+}
+
 .flowers-txt {
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
     line-height: 22px;
     color: #343434;
+    word-break: break-all;
 }
 
 .flowers-price {
@@ -106,7 +112,7 @@ input[type="number"] {
 .quantity-num {
     outline: none;
     width: 71px !important;
-    height: 30px;
+    height: 28px;
     text-align: center;
 }
 
@@ -130,6 +136,7 @@ input[type="number"] {
         line-height: 49px;
         letter-spacing: 0.075em;
         color: $grey;
+        word-break: break-all;
     }
 
     &__box {
@@ -259,7 +266,7 @@ input[type="number"] {
 
     .slider-for__itemN img {
         height: 30vw !important;
-        min-height: 250px !important;
+        min-height: 280px !important;
     }
 
     .product-description {

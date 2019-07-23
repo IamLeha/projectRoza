@@ -48,9 +48,7 @@
 
 /*---------------*/
 
-/*Кнопка заказать*/
-.myBtn {
-    width: 250px;
+%btn {
     margin: 0 auto;
     height: 50px;
     margin-bottom: 10px;
@@ -62,6 +60,12 @@
     line-height: 30px;
     letter-spacing: 0.27em;
     text-transform: uppercase;
+}
+
+/*Кнопка заказать*/
+.myBtn {
+    width: 250px;
+    @extend %btn;
 
     &:hover {
         color: #fff;
@@ -150,7 +154,7 @@ img.imgW {
     left: 20px;
 }
 
-.padNone {
+.padingNone {
     padding-right: 0px !important;
     padding-left: 0px !important;
 }
@@ -201,3 +205,8 @@ img.imgW {
     background-size: cover;
 }
 
+@media screen and (max-width: 450px) {
+    .myContainer {
+        width: 100%;
+    }
+}
