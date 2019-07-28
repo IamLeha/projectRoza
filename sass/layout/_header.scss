@@ -28,13 +28,12 @@
     &__img {
         position: relative;
     }
+
+    &__number{
+        color: $red;
+    }
 }
 
-.ellipse {
-    position: absolute;
-    top: -12px;
-    right: -8px;
-}
 
 .special-offer {
     position: relative;
@@ -101,9 +100,7 @@
     padding-left: 10px !important;
 }
 
-.navbar-toggler {
-    margin-bottom: 10px !important;
-}
+
 
 .myDropdown__btn {
     background-color: $white;
@@ -135,6 +132,21 @@
     display: none !important;
 }
 
+.fixed-top__basket{
+        position: fixed;
+        top: 20px;
+        right: 10px;
+        z-index: 10000;
+}
+
+.second-navbar,.dropdown-divider{
+    display: none !important;
+}
+
+.nav-info{
+    @include dflex(space-between, center)
+}
+
 @media screen and (max-width:1025px) {
     .top-header {
 
@@ -145,15 +157,15 @@
         }
 
         &__delivery {
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: space-between !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         &__number {
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: space-between !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
 }
@@ -169,9 +181,7 @@
         display: flex !important;
     }
 
-    .top-header__basket {
-        display: none !important;
-    }
+    
 
     .special-offer {
 
@@ -182,6 +192,10 @@
         &__close {
             top: 3px;
         }
+    }
+
+    .second-navbar, .dropdown-divider{
+        display: block !important;
     }
 }
 
@@ -196,6 +210,30 @@
         &__close {
             top: 20px;
         }
+    }
+
+    .top-header {
+
+        &__chooseTown {
+            display: none !important;
+        }
+
+        &__delivery {
+            display: none !important;
+        }
+
+        &__number {
+            display: none !important;
+        }
+    }
+
+    .logo-container{
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .logo-container img{
+        width: 100%;
     }
 }
 

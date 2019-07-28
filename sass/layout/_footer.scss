@@ -23,6 +23,12 @@
     color: $white !important;
 }
 
+.newNavLink {
+    font-size: 18px !important;
+    line-height: 25px !important;
+    color: $white !important;
+}
+
 .footerTxt {
     font-size: 0.875rem !important;
     line-height: 19px !important;
@@ -44,20 +50,19 @@
 }
 
 
-@media screen and (max-width: 769px){
-    .footer-navbar{
+@media screen and (max-width: 769px) {
+    .footer-navbar {
         display: none !important;
     }
 
-    .footer-info{
+    .footer-info {
 
-        &__delivery{
+        &__delivery {
             margin-top: 20px;
         }
 
-        &__pay{
+        &__pay {
             margin-top: 20px;
         }
     }
 }
-

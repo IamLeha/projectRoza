@@ -88,6 +88,11 @@ a:hover {
   line-height: 25px !important;
   color: #fff !important; }
 
+.newNavLink {
+  font-size: 18px !important;
+  line-height: 25px !important;
+  color: #fff !important; }
+
 .footerTxt {
   font-size: 0.875rem !important;
   line-height: 19px !important;
@@ -131,10 +136,8 @@ a:hover {
 .basket__img {
   position: relative; }
 
-.ellipse {
-  position: absolute;
-  top: -12px;
-  right: -8px; }
+.basket__number {
+  color: #B10802; }
 
 .special-offer {
   position: relative;
@@ -187,9 +190,6 @@ a:hover {
 .navbar-nav .nav-link {
   padding-left: 10px !important; }
 
-.navbar-toggler {
-  margin-bottom: 10px !important; }
-
 .myDropdown__btn {
   background-color: #fff;
   border: none; }
@@ -214,19 +214,39 @@ a:hover {
 .basket-block {
   display: none !important; }
 
+.fixed-top__basket {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  z-index: 10000; }
+
+.second-navbar, .dropdown-divider {
+  display: none !important; }
+
+.nav-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 @media screen and (max-width: 1025px) {
   .top-header__chooseTown {
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important; }
   .top-header__delivery {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
   .top-header__number {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important; } }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; } }
 
 @media screen and (max-width: 769px) {
   .logo-container {
@@ -243,18 +263,29 @@ a:hover {
     margin-bottom: 20px; }
   .basket-block {
     display: flex !important; }
-  .top-header__basket {
-    display: none !important; }
   .special-offer__txt {
     font-size: 1.2rem; }
   .special-offer__close {
-    top: 3px; } }
+    top: 3px; }
+  .second-navbar, .dropdown-divider {
+    display: block !important; } }
 
 @media screen and (max-width: 425px) {
   .special-offer__txt {
     font-size: 1rem; }
   .special-offer__close {
-    top: 20px; } }
+    top: 20px; }
+  .top-header__chooseTown {
+    display: none !important; }
+  .top-header__delivery {
+    display: none !important; }
+  .top-header__number {
+    display: none !important; }
+  .logo-container {
+    width: 50%;
+    margin-bottom: 0; }
+  .logo-container img {
+    width: 100%; } }
 
 @media screen and (max-width: 321px) {
   .special-offer__txt {
@@ -280,7 +311,7 @@ a:hover {
 /* При наведении*/
 .myCards:hover .myContainer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+  z-index: 10;
   background-color: #fff;
   height: auto; }
 
@@ -327,7 +358,7 @@ a:hover {
   line-height: 33px;
   width: 250px;
   text-transform: uppercase;
-  z-index: 100000;
+  z-index: 11;
   transition: all 0.3s linear; }
   .feature__txt {
     margin: 0;

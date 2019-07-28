@@ -75,3 +75,19 @@ $(function() {
   })();
 });
 /*---------------------------------------------------------------------------*/
+
+  $(window).scroll(function(){
+    $('#fix-top').toggleClass('fixed-top', $(this).scrollTop() > 0);
+  
+    if($(window).width() < 769){
+      $('#top-header__basket').toggleClass('fixed-top__basket', $(this).scrollTop() > 0);
+      if( $(this).scrollTop() > 0){
+        $('#image').attr('src', 'img/basket-mobile.png');
+        $('#basket__number').css("color", "white"); 
+      }
+      else{
+        $('#image').attr('src', 'img/basket.png');
+        $('#basket__number').css("color", "#B10802"); 
+      }
+    }
+  })

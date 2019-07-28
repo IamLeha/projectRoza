@@ -24,7 +24,7 @@
 /* При наведении*/
 .myCards:hover .myContainer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+    z-index: 10;
     background-color: #fff;
     height: auto;
 }
@@ -84,7 +84,7 @@
     line-height: 33px;
     width: 250px;
     text-transform: uppercase;
-    z-index: 100000;
+    z-index: 11;
     //margin-left: -1px;
     transition: all 0.3s linear;
 
@@ -204,6 +204,8 @@ img.imgW {
     background: url(../img/image.png)no-repeat center;
     background-size: cover;
 }
+
+
 
 @media screen and (max-width: 450px) {
     .myContainer {
